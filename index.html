@@ -355,6 +355,74 @@
     }
     .stat-label { font-size: 0.82rem; color: var(--text-muted); font-weight: 500; }
 
+    /* ── FOUNDATION BLOCK ────────────────────────────────── */
+    .foundation-block {
+      margin-top: 40px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+    }
+    .foundation-logo {
+      display: block;
+      max-width: 200px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 16px;
+      border-radius: 8px;
+    }
+
+    /* ── JOIN US BANNER ──────────────────────────────────── */
+    .join-us-banner {
+      position: relative;
+      min-height: 420px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: url('images/register-open.jpg') center/cover no-repeat;
+      scroll-margin-top: var(--nav-h);
+    }
+    .join-us-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(10, 30, 20, 0.62);
+    }
+    .join-us-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 60px 24px;
+      max-width: 720px;
+    }
+    .join-us-title {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .join-us-sub {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 32px;
+      line-height: 1.7;
+    }
+    .join-us-btn {
+      display: inline-block;
+      background: #ffffff;
+      color: var(--green-dark);
+      font-size: 0.95rem;
+      font-weight: 700;
+      padding: 14px 36px;
+      border-radius: 32px;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s, transform 0.2s;
+      letter-spacing: 0.02em;
+    }
+    .join-us-btn:hover {
+      background: var(--green-light);
+      color: var(--green-dark);
+      transform: translateY(-2px);
+    }
+
     /* ── SCHEDULE ─────────────────────────────────────────── */
     #schedule { background: var(--green-pale); }
 
@@ -1011,10 +1079,27 @@
       <p class="section-lead" style="margin-top:16px;">
         Beyond the courts, the tournament welcomes fans, volunteers, and sponsors who help make the experience exceptional - featuring player amenities, a full event schedule, and a vibrant on-site atmosphere. Join us to compete, support, and honor Justin through the sport he loved.
       </p>
+
+      <div class="foundation-block">
+        <img src="images/sponsor-loveall.jpg" alt="Love All: Justin Bourassa Foundation" class="foundation-logo" />
+        <p class="section-lead">
+          The Love All: Justin Bourassa Foundation was created to honour Justin's memory and keep his spirit alive in the community he loved. Through initiatives like this tournament, the Foundation supports youth tennis development, community programs, and the values of sportsmanship and connection that Justin embodied. The silent auction held each year directly benefits the Foundation and its ongoing work.
+        </p>
+      </div>
     </div>
     <div class="about-photo-col">
       <img src="images/justin.jpg" alt="Justin Bourassa" loading="lazy" />
       <div class="about-visual-caption">Justin Bourassa &mdash; In Loving Memory</div>
+    </div>
+  </section>
+
+  <!-- ── JOIN US BANNER ──────────────────────────────────── -->
+  <section class="join-us-banner" aria-label="Join Us">
+    <div class="join-us-overlay"></div>
+    <div class="join-us-content">
+      <h2 class="join-us-title">Join Us This Tournament Week</h2>
+      <p class="join-us-sub">Register to play, sign up to volunteer, or support as a sponsor.</p>
+      <a href="#register" class="join-us-btn">Learn More</a>
     </div>
   </section>
 
