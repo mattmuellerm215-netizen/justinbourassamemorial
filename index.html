@@ -783,6 +783,41 @@
       max-height: 110px;
     }
 
+    .sponsor-tier { margin-bottom: 48px; }
+    .sponsor-tier:last-of-type { margin-bottom: 0; }
+    .sponsor-tier-label {
+      text-align: center;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--green-mid);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .sponsor-tier-label::before,
+    .sponsor-tier-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+    .sponsor-box--grand {
+      flex: 1 1 220px;
+      max-width: 280px;
+      padding: 28px 24px;
+      border-color: var(--green-mid);
+    }
+    .sponsor-box--grand img { max-height: 120px; }
+    .sponsor-box--court {
+      flex: 1 1 180px;
+      max-width: 240px;
+      padding: 24px 20px;
+    }
+    .sponsor-box--court img { max-height: 100px; }
+
     .sponsor-cta {
       text-align: center;
       margin-top: 40px;
@@ -1441,66 +1476,81 @@
         <div class="divider divider-center"></div>
         <p class="section-lead">This tournament would not be possible without the generous support of our sponsors. We are grateful for their commitment to our community and to Justin's memory.</p>
       </div>
-      <div class="sponsors-grid">
-        <div class="sponsor-box">
-          <img src="images/sponsor-loveall2.jpg" alt="Love All: Justin Bourassa Foundation" loading="lazy" />
+      <div class="sponsor-tier">
+        <div class="sponsor-tier-label">Grand Slam</div>
+        <div class="sponsors-grid">
+          <div class="sponsor-box sponsor-box--grand">
+            <img src="images/sponsor-parklane2.jpg" alt="Parklane" loading="lazy" />
+          </div>
+          <div class="sponsor-box sponsor-box--grand">
+            <img src="images/sponsor-loveall2.jpg" alt="Love All: Justin Bourassa Foundation" loading="lazy" />
+          </div>
         </div>
-        <div class="sponsor-box">
-          <img src="images/sponsor-subway.jpg" alt="Subway" loading="lazy" />
+      </div>
+
+      <div class="sponsor-tier">
+        <div class="sponsor-tier-label">Court</div>
+        <div class="sponsors-grid">
+          <div class="sponsor-box sponsor-box--court">
+            <img src="images/sponsor-tangs.jpg" alt="Tang's" loading="lazy" />
+          </div>
         </div>
-        <div class="sponsor-box">
-          <img src="images/sponsor-stc.jpg" alt="Sarnia Tennis Club" loading="lazy" />
-        </div>
-        <div class="sponsor-box">
-          <img src="images/sponsor-oven360.jpg" alt="Oven 360" loading="lazy" />
-        </div>
-        <div class="sponsor-box">
-          <img src="images/sponsor-memorylens.jpg" alt="Memory Lens" loading="lazy" />
-        </div>
-        <div class="sponsor-box">
-          <img src="images/sponsor-kernwater.jpg" alt="Kern Water" loading="lazy" />
-        </div>
-        <div class="sponsor-box">
-          <img src="images/sponsor-tom.jpg" alt="Tom Szczerbowski - Photographer and Designer" loading="lazy" />
-        </div>
-        <div class="sponsor-box">
-          <img src="images/sponsor-aurum.jpg" alt="Aurum" loading="lazy" />
-        </div>
-        <div class="sponsor-box">
-          <img src="images/sponsor-jimforbes.jpg" alt="Jim Forbes" loading="lazy" />
-        </div>
-        <div class="sponsor-box">
-          <img src="images/sponsor-tenniscanada.jpg" alt="Tennis Canada" loading="lazy" />
-        </div>
-        <div class="sponsor-box">
-          <img src="images/sponsor-ota.jpg" alt="Ontario Tennis Association" loading="lazy" />
-        </div>
-        <div class="sponsor-box">
-          <img src="images/sponsor-progressiveautosales.jpg" alt="Progressive Auto Sales" loading="lazy" />
-        </div>
-        <div class="sponsor-box">
-          <img src="images/sponsor-fleck.jpg" alt="Fleck" loading="lazy" />
-        </div>
-        <div class="sponsor-box">
-          <img src="images/sponsor-trustone.jpg" alt="TrustOne" loading="lazy" />
-        </div>
-        <div class="sponsor-box">
-          <img src="images/sponsor-lambtonsanitation.jpg" alt="Lambton Sanitation" loading="lazy" />
-        </div>
-        <div class="sponsor-box">
-          <img src="images/sponsor-ce.jpg" alt="CE" loading="lazy" />
-        </div>
-        <div class="sponsor-box">
-          <img src="images/sponsor-parklane2.jpg" alt="Parklane" loading="lazy" />
-        </div>
-        <div class="sponsor-box">
-          <img src="images/sponsor-russels.jpg" alt="Russels" loading="lazy" />
-        </div>
-        <div class="sponsor-box">
-          <img src="images/sponsor-ryan.jpg" alt="Ryan" loading="lazy" />
-        </div>
-        <div class="sponsor-box">
-          <img src="images/sponsor-tangs.jpg" alt="Tang's" loading="lazy" />
+      </div>
+
+      <div class="sponsor-tier">
+        <div class="sponsor-tier-label">Rally</div>
+        <div class="sponsors-grid">
+          <div class="sponsor-box">
+            <img src="images/sponsor-subway.jpg" alt="Subway" loading="lazy" />
+          </div>
+          <div class="sponsor-box">
+            <img src="images/sponsor-stc.jpg" alt="Sarnia Tennis Club" loading="lazy" />
+          </div>
+          <div class="sponsor-box">
+            <img src="images/sponsor-oven360.jpg" alt="Oven 360" loading="lazy" />
+          </div>
+          <div class="sponsor-box">
+            <img src="images/sponsor-memorylens.jpg" alt="Memory Lens" loading="lazy" />
+          </div>
+          <div class="sponsor-box">
+            <img src="images/sponsor-kernwater.jpg" alt="Kern Water" loading="lazy" />
+          </div>
+          <div class="sponsor-box">
+            <img src="images/sponsor-tom.jpg" alt="Tom Szczerbowski - Photographer and Designer" loading="lazy" />
+          </div>
+          <div class="sponsor-box">
+            <img src="images/sponsor-aurum.jpg" alt="Aurum" loading="lazy" />
+          </div>
+          <div class="sponsor-box">
+            <img src="images/sponsor-jimforbes.jpg" alt="Jim Forbes" loading="lazy" />
+          </div>
+          <div class="sponsor-box">
+            <img src="images/sponsor-tenniscanada.jpg" alt="Tennis Canada" loading="lazy" />
+          </div>
+          <div class="sponsor-box">
+            <img src="images/sponsor-ota.jpg" alt="Ontario Tennis Association" loading="lazy" />
+          </div>
+          <div class="sponsor-box">
+            <img src="images/sponsor-progressiveautosales.jpg" alt="Progressive Auto Sales" loading="lazy" />
+          </div>
+          <div class="sponsor-box">
+            <img src="images/sponsor-fleck.jpg" alt="Fleck" loading="lazy" />
+          </div>
+          <div class="sponsor-box">
+            <img src="images/sponsor-trustone.jpg" alt="TrustOne" loading="lazy" />
+          </div>
+          <div class="sponsor-box">
+            <img src="images/sponsor-lambtonsanitation.jpg" alt="Lambton Sanitation" loading="lazy" />
+          </div>
+          <div class="sponsor-box">
+            <img src="images/sponsor-ce.jpg" alt="CE" loading="lazy" />
+          </div>
+          <div class="sponsor-box">
+            <img src="images/sponsor-russels.jpg" alt="Russels" loading="lazy" />
+          </div>
+          <div class="sponsor-box">
+            <img src="images/sponsor-ryan.jpg" alt="Ryan" loading="lazy" />
+          </div>
         </div>
       </div>
       <div class="sponsor-cta">
