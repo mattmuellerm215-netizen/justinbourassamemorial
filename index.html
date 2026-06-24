@@ -1079,6 +1079,41 @@
     .fade-up:nth-child(2) { animation-delay: 0.1s; }
     .fade-up:nth-child(3) { animation-delay: 0.2s; }
     .fade-up:nth-child(4) { animation-delay: 0.3s; }
+
+    /* Raffle Banner */
+    #raffle-banner {
+      background: linear-gradient(135deg, #b8860b 0%, #daa520 50%, #b8860b 100%);
+      color: #1a1a1a;
+      text-align: center;
+      padding: 18px 24px;
+      position: relative;
+      z-index: 999;
+    }
+    #raffle-banner h2 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      margin: 0 0 6px;
+      letter-spacing: 0.01em;
+      text-shadow: 0 1px 2px rgba(255,255,255,0.25);
+    }
+    #raffle-banner p {
+      font-size: 0.92rem;
+      margin: 0 0 14px;
+      opacity: 0.9;
+    }
+    .btn-raffle {
+      display: inline-block;
+      background: #1a3a2a;
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 10px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      transition: background 0.2s;
+    }
+    .btn-raffle:hover { background: #0f2219; color: #fff; }
   </style>
 </head>
 <body>
@@ -1121,6 +1156,13 @@
     </ul>
   </div>
 
+  <!-- ── RAFFLE BANNER ──────────────────────────────────── -->
+  <div id="raffle-banner">
+    <h2>🎾 Win US Open Quarter-Final Box Seat Tickets!</h2>
+    <p>Enter our online raffle for your chance to win an unforgettable experience at the US Open</p>
+    <a href="https://www.rafflebox.ca/raffle/jrhef" target="_blank" rel="noopener noreferrer" class="btn-raffle">Enter Raffle Now</a>
+  </div>
+
   <!-- ── HERO ────────────────────────────────────────────── -->
   <section id="home">
     <div class="hero-inner">
@@ -1152,6 +1194,9 @@
       </p>
       <p class="section-lead" style="margin-top:16px;">
         Beyond the courts, the tournament welcomes fans, volunteers, and sponsors who help make the experience exceptional - featuring player amenities, a full event schedule, and a vibrant on-site atmosphere. Join us to compete, support, and honour Justin through the sport he loved.
+      </p>
+      <p class="section-lead" style="margin-top:16px;">
+        Can't make it to Sarnia? You can still be part of the action — <a href="https://www.rafflebox.ca/raffle/jrhef" target="_blank" rel="noopener noreferrer" style="color:var(--green-dark);font-weight:700;">enter our online raffle</a> for a chance to win US Open Quarter-Final Box Seat Tickets and experience a Grand Slam like never before.
       </p>
 
       <div class="foundation-block">
